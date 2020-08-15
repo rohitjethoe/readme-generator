@@ -1,8 +1,11 @@
 <template>
   <div id="app">
     <Header />
-    <Create v-if="!load" v-on:create-readme="createReadme"/>
-    <File v-if="load" v-bind:config="config" />
+    <div class="container">
+      <Create v-if="!load" v-on:create-readme="createReadme"/>
+      <File v-if="load" v-bind:config="config" />
+    </div>
+    <Footer />
   </div>
 </template>
 
@@ -10,6 +13,7 @@
 import Header from "./components/Header";
 import Create from "./components/Create";
 import File from "./components/File";
+import Footer from "./components/Footer";
 
 export default {
   name: 'App',
@@ -29,7 +33,8 @@ export default {
   components: {
     Create,
     Header,
-    File
+    File,
+    Footer
   }
 }
 </script>
@@ -47,5 +52,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+
+.container {
+  min-height: calc(100vh - 345.5px - 28.5px);
 }
 </style>

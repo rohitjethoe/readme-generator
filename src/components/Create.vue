@@ -96,6 +96,20 @@ export default {
             width: 40px;
         }
     }
+    .button {
+        margin-top: 30px;
+        a {
+            border: 1px solid #111;
+            padding: 6px 60px;
+            color: #111;
+            transition: 0.2s;
+        }
+        a:hover {
+            -webkit-box-shadow: -2px 3px 2px 3px rgba(0,0,0,0.2);
+            -moz-box-shadow: -2px 3px 2px 3px rgba(0,0,0,0.2);
+            box-shadow: -2px 3px 2px 2px rgba(0,0,0,0.2);
+        }
+    }
 }
 
 @media only screen and (max-width: 1000px) {
