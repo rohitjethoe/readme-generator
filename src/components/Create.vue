@@ -28,7 +28,7 @@
             </div>
             <input v-model="config.githubName" type="text" placeholder="github username...">
             <br>
-            <input v-model="config.repoName" type="text" placeholder="repository name">
+            <input v-model="config.repoName" type="text" placeholder="repository name...">
         </div>
         <div class="section">
             <div class="title">
@@ -105,6 +105,7 @@ export default {
             transition: 0.2s;
         }
         a:hover {
+            cursor: pointer;
             -webkit-box-shadow: -2px 3px 2px 3px rgba(0,0,0,0.2);
             -moz-box-shadow: -2px 3px 2px 3px rgba(0,0,0,0.2);
             box-shadow: -2px 3px 2px 2px rgba(0,0,0,0.2);
