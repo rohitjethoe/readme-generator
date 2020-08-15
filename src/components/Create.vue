@@ -63,78 +63,72 @@ export default {
 
 <style lang="scss">
 .create {
-    width: 500px;
-    margin: 60px auto;
-    display: block;
-    .section {
-        margin-top: 20px;
-        .title {
-            h1 {
-                font-size: 21px;
-                font-weight: 400;
-            }
-        }
-        select {
-            margin-top: 20px;
-        }
-        input {
-            border: none;
-            width: 250px;
-            margin-top: 20px;
-            border-bottom: #999 1px solid;
-            padding-bottom: 10px;
-            transition: 0.5s all;
-            font-size: 14px;
-            color: #999;
-        }
-        input:focus {
-            outline: none;
-            color: #111;
-            border-bottom: #111 1px solid;
-        }
-        .checkbox {
-            width: 40px;
-        }
-    }
-    .button {
-        margin-top: 30px;
-        a {
-            border: 1px solid #111;
-            padding: 6px 60px;
-            color: #111;
-            transition: 0.2s;
-        }
-        a:hover {
-            cursor: pointer;
-            -webkit-box-shadow: -2px 3px 2px 3px rgba(0,0,0,0.2);
-            -moz-box-shadow: -2px 3px 2px 3px rgba(0,0,0,0.2);
-            box-shadow: -2px 3px 2px 2px rgba(0,0,0,0.2);
-        }
-    }
+	 width: 500px;
+	 margin: 60px auto;
+	 display: block;
 }
-
-@media only screen and (max-width: 1000px) {
-    .create { 
-        width: 600px;
-        .section {
-            input {
-                width: 300px;
-            }
-        }
-    }
+ .create .section {
+	 margin-top: 20px;
 }
-
-@media only screen and (max-width: 700px) {
-    .create {
-        width: 400px;
-        margin-top: 60px;
-    }
+ .create .section .title h1 {
+	 font-size: 21px;
+	 font-weight: 400;
 }
-
-@media only screen and (max-width: 464px) {
-    .create {
-        width: 360px;
-        margin-top: 60px;
-    }
+ .create .section select {
+	 margin-top: 20px;
 }
+ .create .section input {
+	 border: none;
+	 width: 250px;
+	 margin-top: 20px;
+	 border-bottom: #999 1px solid;
+	 padding-bottom: 10px;
+	 transition: 0.5s all;
+	 font-size: 14px;
+	 color: #999;
+}
+ .create .section input:focus {
+	 outline: none;
+	 color: #111;
+	 border-bottom: #111 1px solid;
+}
+ .create .section .checkbox {
+	 width: 40px;
+}
+ .create .button {
+	 margin-top: 30px;
+}
+ .create .button a {
+	 border: 1px solid #111;
+	 padding: 6px 60px;
+	 color: #111;
+	 transition: 0.2s;
+}
+ .create .button a:hover {
+	 cursor: pointer;
+	 -webkit-box-shadow: -2px 3px 2px 3px rgba(0, 0, 0, 0.2);
+	 -moz-box-shadow: -2px 3px 2px 3px rgba(0, 0, 0, 0.2);
+	 box-shadow: -2px 3px 2px 2px rgba(0, 0, 0, 0.2);
+}
+ @media only screen and (max-width: 1000px) {
+	 .create {
+		 width: 600px;
+	}
+	 .create .section input {
+		 width: 300px;
+	}
+}
+ @media only screen and (max-width: 700px) {
+	 .create {
+		 width: 400px;
+		 margin-top: 60px;
+	}
+}
+ @media only screen and (max-width: 464px) {
+	 .create {
+		 width: 360px;
+		 margin-top: 60px;
+	}
+}
+ 
 </style>

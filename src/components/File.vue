@@ -63,30 +63,27 @@ export default {
 </script>
 
 <style lang="scss">
-.file {
-    .code {
-        .heading {
-            font-size: 24px;
-            margin-left: 4%;
-            padding: 15px 0px;
-        }
-        hr {
-            width: 96%;
-            border: 0.5px solid;
-            margin: 0 auto;
-            margin-bottom: 10px;
-        }
-        .readme-code {
-            width: 80%;
-            margin-left: 4%;
-        }
-        code {
-            font-family: "Source Sans Pro", sans-serif;
-            .title {
-                font-weight: 600;
-            }
-        }
-    }
+.file .code .heading {
+	 font-size: 24px;
+	 margin-left: 4%;
+	 padding: 15px 0px;
 }
+ .file .code hr {
+	 width: 96%;
+	 border: 0.5px solid;
+	 margin: 0 auto;
+	 margin-bottom: 10px;
+}
+ .file .code .readme-code {
+	 width: 80%;
+	 margin-left: 4%;
+}
+ .file .code code {
+	 font-family: "Source Sans Pro", sans-serif;
+}
+ .file .code code .title {
+	 font-weight: 600;
+}
+ 
 </style>
 

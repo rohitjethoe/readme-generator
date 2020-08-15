@@ -10,13 +10,14 @@ export default {
 }
 </script>
 
-<style lang="scss">
-    .footer {
-        margin-top: 20px;
-        text-align: center;
-        padding: 4px 0px;
-        span {
-            color: #48c9b0;
-        }
-    }
+<style scoped>
+.footer {
+	 margin-top: 20px;
+	 text-align: center;
+	 padding: 4px 0px;
+}
+ .footer span {
+	 color: #48c9b0;
+}
+ 
 </style>

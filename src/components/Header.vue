@@ -53,49 +53,47 @@ export default {
 }
 </script>
 
-<style lang="scss">
-    .header {
-        background-color: #48c9b0;
-        padding: 120px 0px;
-        color: #fff; 
-        .image {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-        .logo {
-            font-size: 36px;
-            display: block;
-            text-align: center;
-        }
-        .subtitle {
-            text-align: center;
-            font-size: 20px;
-        }
-        .repo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 10px;
-            .icon {
-                margin-left: 10px;
-                a:link, a:visited {
-                    color: #fff;
-                }
-            }
-            .github {
-                transform: translateY(-2px);
-            }
-        }
-    }
-    @media only screen and (min-width: 800px) {
-        .header {
-            .logo {
-                font-size: 36px;
-            }
-            .subtitle {
-                font-size: 20px;
-            }
-        }
-    }
+<style scoped>
+.header {
+	 background-color: #48c9b0;
+	 padding: 120px 0px;
+	 color: #fff;
+}
+ .header .image {
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+}
+ .header .logo {
+	 font-size: 36px;
+	 display: block;
+	 text-align: center;
+}
+ .header .subtitle {
+	 text-align: center;
+	 font-size: 20px;
+}
+ .header .repo {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 margin-top: 10px;
+}
+ .header .repo .icon {
+	 margin-left: 10px;
+}
+ .header .repo .icon a:link, .header .repo .icon a:visited {
+	 color: #fff;
+}
+ .header .repo .github {
+	 transform: translateY(-2px);
+}
+ @media only screen and (min-width: 800px) {
+	 .header .logo {
+		 font-size: 36px;
+	}
+	 .header .subtitle {
+		 font-size: 20px;
+	}
+}
 </style>
