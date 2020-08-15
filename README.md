@@ -5,7 +5,7 @@ README Generator can easily generate a README.md for your project.
 ### 💻 Live Version
 View the hosted version at [https://readme-generator.netlify.app/](https://readme-generator.netlify.app/)
 
-### :star: Features
+### ⭐️ Features
 - Generate README fast
 - Including License
 - Free and Open Source
