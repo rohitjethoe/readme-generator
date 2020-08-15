@@ -61,7 +61,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped>
 .create {
 	width: 500px;
 	margin: 60px auto;

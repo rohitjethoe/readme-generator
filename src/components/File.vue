@@ -62,7 +62,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped>
 .file .code .heading {
 	font-size: 24px;
 	margin-left: 4%;
