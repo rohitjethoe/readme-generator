@@ -57,7 +57,7 @@ export default {
             font-size: 28px;
             display: block;
             text-align: center;
-            color: #76d7c4; 
+            color:#48c9b0; 
         }
         .subtitle {
             text-align: center;
