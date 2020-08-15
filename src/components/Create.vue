@@ -10,7 +10,7 @@
             <div class="title">
                 <h1>Subtitle</h1>
             </div>
-            <input v-model="subtitle" type="text" placeholder="short description about project...">
+            <input v-model="subtitle" type="text" placeholder="about the project...">
         </div>
         <div class="section">
             <div class="title">
@@ -39,13 +39,49 @@ export default {
 
 <style lang="scss">
 .create {
+    width: 500px;
+    margin: 60px auto;
+    display: block;
     .section {
+        margin-top: 20px;
         .title {
             h1 {
-                font-size: 20px;
+                font-size: 21px;
                 font-weight: 400;
             }
         }
+        select {
+            margin-top: 20px;
+        }
+        input {
+            border: none;
+            width: 250px;
+            margin-top: 20px;
+            border-bottom: #999 1px solid;
+            padding-bottom: 10px;
+            transition: 0.5s all;
+            font-size: 14px;
+            color: #999;
+        }
+        input:focus {
+            outline: none;
+            color: #111;
+            border-bottom: #111 1px solid;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .create {
+        width: 400px;
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 464px) {
+    .create {
+        width: 360px;
+        margin-top: 60px;
     }
 }
 </style>

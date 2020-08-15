@@ -19,4 +19,5 @@ npm run serve
 If you want to contribute to the project see the [contributing guidelines](https://github.com/rohitjethoe/readme-generator/CONTRIBUTING.md)
 
 ### 📜 License
+
 [MIT License](https://opensource.org/licenses/MIT)
