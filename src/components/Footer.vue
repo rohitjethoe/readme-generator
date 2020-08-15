@@ -12,12 +12,12 @@ export default {
 
 <style scoped>
 .footer {
-	 margin-top: 20px;
-	 text-align: center;
-	 padding: 4px 0px;
+	margin-top: 20px;
+	text-align: center;
+	padding: 4px 0px;
 }
- .footer span {
-	 color: #48c9b0;
+.footer span {
+	color: #48c9b0;
 }
  
 </style>
