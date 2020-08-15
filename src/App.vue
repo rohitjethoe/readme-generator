@@ -1,12 +1,22 @@
 <template>
   <div id="app">
+    <Create />
   </div>
 </template>
 
 <script>
+import Create from "./components/Create";
 
 export default {
-  name: 'App'
+  name: 'App',
+  data() {
+    return {
+      title: null, subtitle: null, license: null
+    }
+  },
+  components: {
+    Create
+  }
 }
 </script>
 
