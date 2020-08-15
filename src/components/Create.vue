@@ -4,24 +4,45 @@
             <div class="title">
                 <h1>Project Title</h1>
             </div>
-            <input v-model="title" type="text" placeholder="name...">
+            <input v-model="config.title" type="text" placeholder="name...">
         </div>
         <div class="section">
             <div class="title">
                 <h1>Subtitle</h1>
             </div>
-            <input v-model="subtitle" type="text" placeholder="about the project...">
+            <input v-model="config.subtitle" type="text" placeholder="about the project...">
+        </div>
+        <div class="section">
+            <div class="title">
+                <h1>Include</h1>
+            </div>
+            <input v-model="config.installation" class="checkbox" type="checkbox" name="installation" value="installation">
+            <label @click="config.installation = !config.installation" for="installation">Getting Started</label>
+            <br>
+            <input v-model="config.contributing" class="checkbox" type="checkbox" name="contributing" value="contributing">
+            <label @click="config.contributing = !config.contributing" for="contributing">Contributing</label>
+        </div>
+        <div v-if="config.installation" class="section">
+            <div class="title">
+                <h1>Getting Started</h1>
+            </div>
+            <input v-model="config.githubName" type="text" placeholder="github username...">
+            <br>
+            <input v-model="config.repoName" type="text" placeholder="repository name">
         </div>
         <div class="section">
             <div class="title">
                 <h1>License</h1>
             </div>
-            <select v-model="license" name="license">
+            <select v-model="config.license" name="license">
                 <option value="MIT">MIT License</option>
                 <option value="APACHE">Apache License 2.0</option>
                 <option value="GNU">GNU General Public License</option>
                 <option value="BSD-2">BSD 2-Clause License</option>
             </select>
+        </div>
+        <div class="button">
+            <a @click="$emit('create-readme', config)">Generate README</a>
         </div>
     </div>
 </template>
@@ -31,7 +52,10 @@ export default {
     name: "Create",
     data() {
         return {
-            title: null, subtitle: null, license: "MIT"
+            config: { 
+                title: null, subtitle: null, license: "MIT", installation: false,
+                contributing: false, githubName: null, repoName: null
+            }
         }
     }
 }
@@ -67,6 +91,20 @@ export default {
             outline: none;
             color: #111;
             border-bottom: #111 1px solid;
+        }
+        .checkbox {
+            width: 40px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .create { 
+        width: 600px;
+        .section {
+            input {
+                width: 300px;
+            }
         }
     }
 }

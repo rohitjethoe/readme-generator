@@ -1,24 +1,35 @@
 <template>
   <div id="app">
     <Header />
-    <Create />
+    <Create v-if="!load" v-on:create-readme="createReadme"/>
+    <File v-if="load" v-bind:config="config" />
   </div>
 </template>
 
 <script>
 import Header from "./components/Header";
 import Create from "./components/Create";
+import File from "./components/File";
 
 export default {
   name: 'App',
   data() {
     return {
-      title: null, subtitle: null, license: "MIT"
+      config: {
+      },
+      load: false
+    }
+  },
+  methods: {
+    createReadme(config) {
+      this.config = config;
+      this.load = true;
     }
   },
   components: {
     Create,
-    Header
+    Header,
+    File
   }
 }
 </script>
