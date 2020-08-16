@@ -21,6 +21,10 @@
             <br>
             <input v-model="config.contributing" class="checkbox" type="checkbox" name="contributing" value="contributing">
             <label @click="config.contributing = !config.contributing" for="contributing">Contributing</label>
+            <br>
+            <input v-model="config.emojis" class="checkbox" type="checkbox" name="contributing" value="contributing">
+            <label @click="config.emojis = !config.emojis" for="contributing">Use Emojis</label>
+
         </div>
         <div v-if="config.installation" class="section">
             <div class="title">
@@ -54,7 +58,7 @@ export default {
         return {
             config: { 
                 title: null, subtitle: null, license: "MIT", installation: false,
-                contributing: false, githubName: null, repoName: null
+                contributing: false, githubName: null, repoName: null, emojis: false
             }
         }
     }

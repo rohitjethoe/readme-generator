@@ -8,7 +8,7 @@
             <div class="readme-code">
                 <code>
                     <span class="title">
-                        # {{ config.title }}
+                        # <span v-if="config.emojis">👨🏽‍💻 </span>{{ config.title }}
                     </span>
                     <br>
                     <span class="subtitle"> 
@@ -17,7 +17,7 @@
                     <br> <br>
                     <div v-if="config.installation" class="getting-started">
                         <span class="title">
-                            ## Getting Started
+                            ## <span v-if="config.emojis">🚀 </span>Getting Started
                         </span>
                         <br>
                         If you have git installed:
@@ -31,7 +31,7 @@
                     <br>
                     <div v-if="config.contributing" class="contributing">
                         <span class="title">
-                            ## Contributing
+                            ## <span v-if="config.emojis">📝 </span>Contributing
                         </span>
                         <br>
                         Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -40,7 +40,7 @@
                     </div>
                     <br>
                     <span class="license">
-                        <span class="title">## License</span>
+                        <span class="title">## <span v-if="config.emojis">📜 </span>License</span>
                         <br>
                         <span v-if="config.license === 'MIT'">
                             [MIT License](https://opensource.org/licenses/MIT)
