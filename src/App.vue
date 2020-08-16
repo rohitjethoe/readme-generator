@@ -2,8 +2,8 @@
   <div id="app">
     <Header />
     <div class="container">
-      <Create v-if="!load" v-on:create-readme="createReadme"/>
-      <File v-if="load" v-bind:config="config" />
+      <Create v-if="!load" v-on:create-readme="createReadme" />
+      <File v-if="load" v-on:try-again="tryAgain" v-bind:config="config" />
     </div>
     <Footer />
   </div>
@@ -28,6 +28,9 @@ export default {
     createReadme(config) {
       this.config = config;
       this.load = true;
+    },
+    tryAgain() {
+      this.load = false
     }
   },
   components: {

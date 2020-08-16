@@ -2,7 +2,8 @@
     <div class="file">
         <div class="code">
             <div class="heading">
-                README.md Generated file.
+                <div class="heading-title">README.md Generated file.</div>
+                <div class="heading-return"><a @click="$emit('try-again', true)">Try Again</a></div>
             </div>
             <hr>
             <div class="readme-code">
@@ -75,6 +76,30 @@ export default {
 	padding: 15px 0px;
     margin-top: 10px;
 }
+.file .code .heading .heading-title {
+    float: left;
+}
+.file .code .heading .heading-return {
+    float: right;
+    margin-right: 4%;
+}
+.file .code .heading .heading-return a {
+    font-size: 18px;
+    padding: 5px 20px;;
+	border: 1px solid #111;
+    transition: 0.2s all;
+}
+.file .code .heading .heading-return a:hover {
+    cursor: pointer;
+	-webkit-box-shadow: -2px 3px 2px 3px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: -2px 3px 2px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 3px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.file .code .heading::after {
+    clear: both;
+    content: "";
+    display: table;
+}
 .file .code hr {
 	width: 96%;
 	border: 0.5px solid;
@@ -92,5 +117,4 @@ export default {
 .file .code code .title {
 	font-weight: 600;
 }
- 
 </style>
