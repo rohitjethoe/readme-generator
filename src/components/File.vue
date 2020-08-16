@@ -67,12 +67,14 @@ export default {
 	font-size: 24px;
 	margin-left: 4%;
 	padding: 15px 0px;
+    margin-top: 10px;
 }
 .file .code hr {
 	width: 96%;
 	border: 0.5px solid;
 	margin: 0 auto;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
+    margin-top: 10px;
 }
 .file .code .readme-code {
 	width: 80%;
@@ -86,4 +88,3 @@ export default {
 }
  
 </style>
-
