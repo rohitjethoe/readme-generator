@@ -38,7 +38,7 @@
                 <option value="MIT">MIT License</option>
                 <option value="APACHE">Apache License 2.0</option>
                 <option value="GNU">GNU General Public License</option>
-                <option value="BSD-2">BSD 2-Clause License</option>
+                <option value="BSD-2">BSD-2 Clause License</option>
             </select>
         </div>
         <div class="button">

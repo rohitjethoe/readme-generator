@@ -48,6 +48,12 @@
                         <span v-if="config.license === 'APACHE'">
                             [Apache License](https://www.apache.org/licenses/LICENSE-2.0.txt)
                         </span>
+                        <span v-if="config.license === 'GNU'">
+                            [GNU License](https://www.gnu.org/licenses/gpl-3.0.nl.html)
+                        </span>
+                        <span v-if="config.license === 'BSD-2'">
+                            [BSD-2 Clause License](https://opensource.org/licenses/BSD-2-Clause)
+                        </span>
                     </span>
                 </code>
             </div>
