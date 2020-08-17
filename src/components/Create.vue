@@ -114,7 +114,18 @@ export default {
 	-moz-box-shadow: -2px 3px 2px 3px rgba(0, 0, 0, 0.2);
 	box-shadow: -2px 3px 2px 2px rgba(0, 0, 0, 0.2);
 }
- @media only screen and (max-width: 1000px) {
+
+@media only screen and (min-width: 1000px) {
+    .create {
+        width: 600px;
+        margin: 60px 20%;
+    }
+    .create .section input {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
 	.create {
 		width: 600px;
 	}
@@ -122,7 +133,8 @@ export default {
 		width: 300px;
 	}
 }
- @media only screen and (max-width: 700px) {
+
+@media only screen and (max-width: 700px) {
 	.create {
 		width: 400px;
 		margin-top: 60px;
